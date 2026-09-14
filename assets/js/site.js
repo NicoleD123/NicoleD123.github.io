@@ -60,13 +60,14 @@
     }
     host.append(role);
 
-    const nav = el("nav", { ariaLabel: "Main" });
+    // 导航渲染到顶栏（#topnav）；页面上没有顶栏时退回侧边栏，保证不会丢导航
+    const navHost = $("#topnav") || host;
     NAV.forEach((item) => {
       const a = el("a", { href: item.href, textContent: item.label });
       if (item.page === page) a.setAttribute("aria-current", "page");
-      nav.append(a);
+      navHost.append(a);
     });
-    host.append(nav);
+    if (navHost === host) host.append(el("div"));
 
     const meta = el("div", { className: "sidebar-meta" });
 
@@ -172,12 +173,14 @@
 
     RESEARCH_GROUPS.forEach((group) => {
       const section = el("section", { className: "theme" });
-      section.append(el("h2", { className: "section-heading", textContent: group.heading }));
+      section.append(el("h2", { className: "theme-heading", textContent: group.heading }));
       if (group.blurb) {
         section.append(el("p", { className: "theme-blurb", textContent: group.blurb }));
       }
+      // note 支持字符串或字符串数组（多段）
       if (group.note) {
-        section.append(el("p", { className: "theme-note", textContent: group.note }));
+        const notes = Array.isArray(group.note) ? group.note : [group.note];
+        notes.forEach((n) => section.append(el("p", { className: "theme-note", textContent: n })));
       }
       if (group.tags && group.tags.length) {
         const ul = el("ul", { className: "tags" });
@@ -194,7 +197,7 @@
       const art = el("article", { className: "project" });
 
       const head = el("div", { className: "project-head" });
-      head.append(el("h2", { className: "project-title", textContent: p.title }));
+      head.append(el("h3", { className: "project-title", textContent: p.title }));
       if (p.status) head.append(el("span", { className: "status", textContent: p.status }));
       art.append(head);
 

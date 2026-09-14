@@ -9,7 +9,7 @@ const SITE = {
   nameAlt: "邓维淳",
 
   role: "Research Coordinator & Lab Manager",
-  affiliation: "@spanlab, department of psychology",
+  affiliation: "@spanlab, Department of Psychology",
 
   // 侧边栏底部的基本信息。schoolUrl 填了的话，"Stanford University" 就会变成可点的链接。
   school: "Stanford University",

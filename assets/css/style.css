@@ -331,7 +331,7 @@ p:last-child { margin-bottom: 0; }
 .theme-heading {
   display: flex;
   align-items: baseline;
-  gap: 14px;
+  gap: 12px;
   font-family: var(--serif);
   font-size: 1.45rem;
   font-weight: 600;
@@ -344,11 +344,9 @@ p:last-child { margin-bottom: 0; }
 
 .theme-num {
   flex: none;
-  min-width: 1.7em;
-  font-size: .92rem;
+  min-width: 1.5em;
   font-weight: 600;
-  letter-spacing: .1em;
-  color: var(--accent);
+  letter-spacing: .02em;
 }
 
 .theme-title { flex: 1 1 auto; }

@@ -171,9 +171,14 @@
       figHost.append(fig);
     }
 
-    RESEARCH_GROUPS.forEach((group) => {
+    const ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII"];
+
+    RESEARCH_GROUPS.forEach((group, i) => {
       const section = el("section", { className: "theme" });
-      section.append(el("h2", { className: "theme-heading", textContent: group.heading }));
+      const h = el("h2", { className: "theme-heading" });
+      h.append(el("span", { className: "theme-num", textContent: ROMAN[i] || String(i + 1) }));
+      h.append(el("span", { className: "theme-title", textContent: group.heading }));
+      section.append(h);
       if (group.blurb) {
         section.append(el("p", { className: "theme-blurb", textContent: group.blurb }));
       }

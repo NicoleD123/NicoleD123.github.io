@@ -13,15 +13,13 @@ const RESEARCH_FIGURE = {
   alt: "Research framework: neural mechanisms of affective experience at the centre, " +
        "surrounded by decisions and behavior, affect–cognition interactions, " +
        "neural representation of affect, and fMRI methods and statistical modeling",
-  caption: "How the four threads fit together."
+  caption: "My research interest road map — still taking shape as I am exploring ;)"
 };
 
 const RESEARCH_GROUPS = [
   {
     heading: "Decisions and behavior",
-    blurb:
-      "How affective responses translate into what people choose, share, and buy — " +
-      "and whether brain activity measured in a scanner holds up against outcomes recorded elsewhere.",
+    blurb: "How affective responses translate into what people choose, share, and buy?",
     projects: [
       {
         title: "Affective and neural contributions to news sharing",
@@ -43,7 +41,7 @@ const RESEARCH_GROUPS = [
         question:
           "Can neural responses predict what individuals choose — and reveal information about future behavior and aggregate demand that behavioral measures alone do not capture?",
         body: [
-          "This line of work examines how neural responses during decision-making relate to behavior across multiple scales. At the individual level, I test whether neural responses to vehicles predict participants’ choices, including purchases measured longitudinally two years later, and when neural measures provide predictive information beyond participants’ stated preferences and other behavioral measures. At the aggregate level, I ask whether brain responses from a relatively small group can forecast broader market demand for vehicles and movies beyond behavioral measures and time-series benchmarks (ARIMA/SARIMA). The work is supported by the <a href=\"https://www.tri.global/our-work/human-centered-ai\" target=\"_blank\" rel=\"noopener\">Toyota Research Institute</a>."
+          "This line of work examines how neural responses during decision-making relate to behavior across multiple scales. I explore these questions through studies of vehicle purchases, movie demand, and fund investment decisions. At the individual level, I test whether neural responses to vehicles predict participants’ choices, including purchases measured longitudinally two years later, and when neural measures provide predictive information beyond participants’ stated preferences and other behavioral measures. At the aggregate level, I ask whether brain responses from a relatively small group can forecast broader market demand for vehicles and movies beyond behavioral measures and time-series benchmarks (ARIMA/SARIMA). The work is supported by the <a href=\"https://www.tri.global\" target=\"_blank\" rel=\"noopener\">Toyota Research Institute</a>."
         ],
         tags: ["AFNI", "FSL FLIRT", "Hierarchical regression", "Cross-validated classification",
                "Parametric modulators", "ARIMA", "Out-of-sample forecasting"],
@@ -69,6 +67,17 @@ const RESEARCH_GROUPS = [
         ],
         tags: ["MVPA", "Cross-dataset generalization", "Individual differences", "CANlab tools"],
         links: []
+      },
+      {
+        title: "Grey matter, positivity bias, and anxiety across the lifespan",
+        status: "Analysis",
+        question:
+          "How is grey matter density in the amygdala and hippocampus related to positivity bias and anxiety, and do these relationships differ across age groups?",
+        body: [
+          "In a related analysis using the <a href=\"https://cam-can.mrc-cbu.cam.ac.uk\" target=\"_blank\" rel=\"noopener\">CamCAN lifespan sample</a>, I estimate grey matter density in the amygdala and hippocampus with FSL FAST partial-volume maps and FreeSurfer. I use partial correlations within age groups to examine associations with positivity bias, anxiety, and an affective-experience composite."
+        ],
+        tags: ["FSL FAST", "FreeSurfer", "CamCAN", "Partial correlation", "HPC cluster"],
+        links: []
       }
     ]
   },
@@ -76,21 +85,12 @@ const RESEARCH_GROUPS = [
   {
     heading: "Neural representation of affect",
     blurb:
-      "How affective experience is organized in the brain, and how that organization differs " +
-      "between people and across the lifespan.",
-    projects: [
-      {
-        title: "Grey matter, positivity bias, and anxiety across the lifespan",
-        status: "Analysis",
-        question:
-          "Does the structure of the amygdala and hippocampus track how positively people see the world as they age?",
-        body: [
-          "Using the CamCAN lifespan sample, I estimate grey matter density in the amygdala and hippocampus with FSL FAST partial-volume maps and FreeSurfer ROI masks.",
-          "Partial correlations relate that structure to positivity bias, anxiety, and an affective-experience composite, with analyses split by age group to look for lifespan differences."
-        ],
-        tags: ["FSL FAST", "FreeSurfer", "CamCAN", "Partial correlation", "HPC cluster"],
-        links: []
-      }
+      "How affective information is represented within and across brain regions, and which " +
+      "aspects of these representations are shared across people and contexts.",
+    // 这一组没有独立项目，用两段话说明它如何贯穿其他项目
+    note: [
+      "This question runs through my projects. In the news-sharing work, I examine how neural responses relate to self-reported valence, arousal, and positive and negative affect. In the work on neural responses and aggregate demand, I ask how neural measures capture information about individual choices and broader market demand that behavioral measures alone do not. In the emotion-regulation work, I ask what a neural signature of reappraisal success captures and how well it generalizes across datasets and task contexts.",
+      "Across these studies, I am interested in how different forms of neural measurement help us understand affective experience—for example, what information is captured by a brain region’s average activity versus the spatial patterns within it. I also ask which aspects of these representations remain consistent across people and contexts, and which vary. I hope to understand how the organization of affective information in the brain helps explain what people feel, how they regulate those feelings, and how affect informs their decisions."
     ]
   },
 

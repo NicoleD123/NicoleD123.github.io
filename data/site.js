@@ -9,12 +9,13 @@ const SITE = {
   nameAlt: "邓维淳",
 
   role: "Research Coordinator & Lab Manager",
-  affiliation: "<a href=\"https://spanlab.stanford.edu\" target=\"_blank\" rel=\"noopener\">@spanlab</a>, Department of Psychology",
+  affiliation: "<a href=\"https://spanlab.stanford.edu\" target=\"_blank\" rel=\"noopener\">@spanlab</a>, Department of Psychology, Stanford University",
 
-  // 侧边栏底部的基本信息。schoolUrl 填了的话，"Stanford University" 就会变成可点的链接。
-  school: "Stanford University",
+  // 侧边栏分隔线以下的几行都是可点的链接。school 是显示文字，schoolUrl 是它指向的地址。
+  school: "Stanford Profile",
   schoolUrl: "https://profiles.stanford.edu/weichun-deng",
-  location: "Palo Alto, CA",
+  // 留空就不在侧边栏显示这一行；想加回来填 "Palo Alto, CA" 就行
+  location: "",
 
   email: "ndeng01@stanford.edu",
 

@@ -92,4 +92,4 @@ const NEWS = [
 ];
 
 // 首页默认显示的条数，超出部分点 "show all" 展开
-const NEWS_VISIBLE = 8;
+const NEWS_VISIBLE = 5;

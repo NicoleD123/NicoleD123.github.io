@@ -9,31 +9,30 @@ const NEWS = [
   {
     date: "October 2026",
     html:
-      "I will attend the <a href=\"https://neuroeconomics.org/\"><strong>Society for Neuroeconomics</strong></a> " +
-      "(SNE) Annual Meeting in Pasadena, where I will present my work. Looking forward to sharing the project " +
-      "and catching up with friends and colleagues!"
+      "I will attend the <a href=\"https://neuroeconomics.org/\">Society for Neuroeconomics</a> (SNE) " +
+      "Annual Meeting in Pasadena. Looking forward to sharing the project and catching up with " +
+      "friends and colleagues!"
   },
   {
     date: "April 2026",
     html:
       "I presented my first-author project at the " +
-      "<a href=\"https://socialaffectiveneuro.org\"><strong>Social and Affective Neuroscience Society (SANS)</strong></a> " +
+      "<a href=\"https://socialaffectiveneuro.org\">Social and Affective Neuroscience Society</a> (SANS) " +
       "Annual Meeting in San Diego."
   },
   {
     date: "October 2025",
     html:
       "Two of my projects, including my first-author work, were presented at the " +
-      "<a href=\"https://neuroeconomics.org\"><strong>Society for Neuroeconomics (SNE)</strong></a> " +
-      "Annual Meeting in Boston, and I gave a talk at Stanford's <strong>Affective Science Seminar</strong>."
+      "<a href=\"https://neuroeconomics.org\">Society for Neuroeconomics</a> (SNE) Annual Meeting in " +
+      "Boston, and I gave a talk at Stanford's Affective Science Seminar."
   },
   {
     date: "June 2025",
     html:
       "I presented our collaborative work with " +
       "<a href=\"https://psychology.stanford.edu/people/golijeh-golarai\">Dr. Golijeh Golarai</a> at the " +
-      "<a href=\"https://bayareaaffectivescience.org\"><strong>Bay Area Affective Science (BAAS)</strong></a> " +
-      "Meeting at Stanford."
+      "<a href=\"https://bayareaaffectivescience.org\">Bay Area Affective Science</a> (BAAS) Meeting at Stanford."
   },
   {
     date: "June 2024",
@@ -45,7 +44,7 @@ const NEWS = [
   {
     date: "May 2024",
     html:
-      "I graduated from <a href=\"https://www.wesleyan.edu\"><strong>Wesleyan University</strong></a> with B.A.s in " +
+      "I graduated from <a href=\"https://www.wesleyan.edu\">Wesleyan University</a> with B.A.s in " +
       "<a href=\"https://www.wesleyan.edu/academics/departments/psychology/\">Psychology</a> and " +
       "<a href=\"https://www.wesleyan.edu/nsb/\">Neuroscience &amp; Behavior</a> and a minor in " +
       "<a href=\"https://www.wesleyan.edu/qac/data-analysis-minor.html\">Data Analysis</a>. " +
@@ -63,8 +62,8 @@ const NEWS = [
     date: "April 2024",
     html:
       "I presented my capstone research on the neural mechanisms of event boundaries and memory at the " +
-      "<a href=\"https://www.qu.edu/schools/arts-and-sciences/our-work-and-research/neuron-conference/\">" +
-      "<strong>NEURON Conference</strong></a> — my very first conference!"
+      "<a href=\"https://www.qu.edu/schools/arts-and-sciences/our-work-and-research/neuron-conference/\">NEURON</a> " +
+      "Conference — my very first conference!"
   },
   {
     date: "Summer 2023",
@@ -93,4 +92,4 @@ const NEWS = [
 ];
 
 // 首页默认显示的条数，超出部分点 "show all" 展开
-const NEWS_VISIBLE = 6;
+const NEWS_VISIBLE = 8;

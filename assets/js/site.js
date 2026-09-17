@@ -173,26 +173,33 @@
 
     const ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII"];
 
+    // 四个主题做成可折叠的 <details>，默认收起，点标题才展开
     RESEARCH_GROUPS.forEach((group, i) => {
-      const section = el("section", { className: "theme" });
-      const h = el("h2", { className: "theme-heading" });
-      h.append(el("span", { className: "theme-num", textContent: ROMAN[i] || String(i + 1) }));
-      h.append(el("span", { className: "theme-title", textContent: group.heading }));
-      section.append(h);
+      // 第一个默认展开，其余收起，让访客一眼看出这些标题是可以点开的
+      const section = el("details", { className: "theme", open: i === 0 });
+
+      const head = el("summary", { className: "theme-heading" });
+      head.append(el("span", { className: "theme-num", textContent: ROMAN[i] || String(i + 1) }));
+      head.append(el("span", { className: "theme-title", textContent: group.heading }));
+      section.append(head);
+
+      const body = el("div", { className: "theme-body" });
       if (group.blurb) {
-        section.append(el("p", { className: "theme-blurb", textContent: group.blurb }));
+        body.append(el("p", { className: "theme-blurb", textContent: group.blurb }));
       }
       // note 支持字符串或字符串数组（多段）
       if (group.note) {
         const notes = Array.isArray(group.note) ? group.note : [group.note];
-        notes.forEach((n) => section.append(el("p", { className: "theme-note", textContent: n })));
+        notes.forEach((n) => body.append(el("p", { className: "theme-note", textContent: n })));
       }
       if (group.tags && group.tags.length) {
         const ul = el("ul", { className: "tags" });
         group.tags.forEach((t) => ul.append(el("li", { className: "tag", textContent: t })));
-        section.append(ul);
+        body.append(ul);
       }
-      (group.projects || []).forEach((p) => section.append(projectNode(p)));
+      (group.projects || []).forEach((p) => body.append(projectNode(p)));
+      section.append(body);
+
       host.append(section);
     });
   }

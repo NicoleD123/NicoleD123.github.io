@@ -330,6 +330,7 @@ p:last-child { margin-bottom: 0; }
 }
 :root[data-theme="dark"] .framework img { filter: brightness(.9); }
 
+/* 四个主题是可折叠的 <details>，summary 是唯一带分隔线的层级 */
 .theme-heading {
   display: flex;
   align-items: baseline;
@@ -339,10 +340,34 @@ p:last-child { margin-bottom: 0; }
   font-weight: 600;
   letter-spacing: -.01em;
   color: var(--text);
-  margin: 0 0 12px;
+  margin: 0;
   padding-bottom: 12px;
   border-bottom: 1px solid var(--line-strong);
+  cursor: pointer;
+  list-style: none;
+  transition: color .15s ease;
 }
+.theme-heading::-webkit-details-marker { display: none; }
+.theme-heading:hover { color: var(--accent); }
+.theme-heading:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+/* 右侧 +/− 指示器 */
+.theme-heading::after {
+  content: "+";
+  flex: none;
+  font-family: var(--sans);
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--faint);
+  padding-left: 16px;
+}
+.theme[open] > .theme-heading::after { content: "\2212"; }
+.theme-heading:hover::after { color: var(--accent); }
 
 .theme-num {
   flex: none;
@@ -353,8 +378,12 @@ p:last-child { margin-bottom: 0; }
 
 .theme-title { flex: 1 1 auto; }
 
+.theme-body {
+  padding-top: 24px;
+}
+
 .theme {
-  margin-bottom: 52px;
+  margin-bottom: 28px;
 }
 .theme:last-child { margin-bottom: 0; }
 
@@ -370,12 +399,11 @@ p:last-child { margin-bottom: 0; }
 }
 .theme-note:last-of-type { margin-bottom: 0; }
 
+/* 项目卡之间不再画线——分隔线只留给四个主题 */
 .project {
-  padding-bottom: 34px;
-  margin-bottom: 34px;
-  border-bottom: 1px solid var(--line);
+  margin-bottom: 38px;
 }
-.project:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.project:last-child { margin-bottom: 0; }
 
 .project-head {
   display: flex;

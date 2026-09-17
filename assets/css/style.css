@@ -202,6 +202,8 @@ p:last-child { margin-bottom: 0; }
   margin: 0 0 20px;
 }
 .sidebar-role strong { font-weight: 600; color: var(--text); }
+.sidebar-role a { color: var(--muted); }
+.sidebar-role a:hover { color: var(--accent); }
 
 .sidebar-meta {
   border-top: 1px solid var(--line);

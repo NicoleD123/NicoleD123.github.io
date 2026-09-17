@@ -56,7 +56,7 @@
     role.append(el("strong", { textContent: SITE.role }));
     if (SITE.affiliation) {
       role.append(document.createElement("br"));
-      role.append(document.createTextNode(SITE.affiliation));
+      role.append(el("span", { innerHTML: SITE.affiliation }));
     }
     host.append(role);
 

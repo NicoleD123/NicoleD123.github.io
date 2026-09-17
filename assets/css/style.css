@@ -223,6 +223,9 @@ p:last-child { margin-bottom: 0; }
   font-size: .79rem;
   word-break: break-all;
 }
+/* 分隔线以下三个链接颜色统一 */
+.sidebar-email a { color: var(--muted); }
+.sidebar-email a:hover { color: var(--accent); }
 .sidebar-meta .sidebar-email { margin-top: 9px; }
 
 .sidebar-links {

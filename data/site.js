@@ -9,7 +9,7 @@ const SITE = {
   nameAlt: "邓维淳",
 
   role: "Research Coordinator & Lab Manager",
-  affiliation: "<a href=\"https://spanlab.stanford.edu\" target=\"_blank\" rel=\"noopener\">@spanlab</a>, Department of Psychology, Stanford University",
+  affiliation: "<a href=\"https://spanlab.stanford.edu\" target=\"_blank\" rel=\"noopener\">@spanlab</a>, Department of Psychology<br>Stanford University",
 
   // 侧边栏分隔线以下的几行都是可点的链接。school 是显示文字，schoolUrl 是它指向的地址。
   school: "Stanford Profile",

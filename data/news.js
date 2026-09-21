@@ -2,7 +2,7 @@
    news.js — News 时间线。最新的放最上面。
    加一条 = 在数组顶部加一行。html 字段里可以写 <a href="...">链接</a>，
    外部链接会自动在新标签页打开，不用手写 target。
-   内容以 Notion「个人网站content」第 3 节为准，2026-09-17 同步。
+   内容以 Notion「个人网站content」第 3 节为准，2026-09-21 同步。
    ========================================================================== */
 
 const NEWS = [
@@ -10,8 +10,8 @@ const NEWS = [
     date: "October 2026",
     html:
       "I will attend the <a href=\"https://neuroeconomics.org/\">Society for Neuroeconomics</a> (SNE) " +
-      "Annual Meeting in Pasadena. Looking forward to sharing the project and catching up with " +
-      "friends and colleagues!"
+      "Annual Meeting in Pasadena this October! Looking forward to sharing projects and catching up with " +
+      "friends and colleagues."
   },
   {
     date: "April 2026",
@@ -55,7 +55,8 @@ const NEWS = [
     html:
       "I wrapped up my undergraduate capstone on event boundaries and memory and shared the work in an invited " +
       "talk at Wesleyan's Data Insight Talk Series. Many thanks to " +
-      "<a href=\"https://www.wesleyan.edu/academics/faculty/yezzyat/profile.html\">Dr. Youssef Ezzyat</a> and " +
+      "<a href=\"https://www.wesleyan.edu/academics/faculty/yezzyat/profile.html\">Dr. Youssef Ezzyat</a> " +
+      "(now moved to <a href=\"https://ezzyatlab.swarthmore.edu/people/\">Swarthmore College</a>) and " +
       "<a href=\"https://www.rkabacoff.com/\">Dr. Robert Kabacoff</a> for their mentorship along the way."
   },
   {

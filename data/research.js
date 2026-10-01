@@ -5,7 +5,7 @@
    experience，四个外圈是四条进路。RESEARCH_GROUPS 的顺序 = 页面顺序（I–IV 自动编号），
    按框架图从正上方顺时针排（Decisions → Affect–cognition → Representation → Methods）。
 
-   内容以 Notion 页「个人网站content」第 4 节为准，2026-09-17 同步。
+   内容以 Notion 页「个人网站content」第 4 节为准，2026-09-30 同步。
    ========================================================================== */
 
 const RESEARCH_FIGURE = {
@@ -13,7 +13,10 @@ const RESEARCH_FIGURE = {
   alt: "Research framework: neural mechanisms of affective experience at the centre, " +
        "surrounded by decisions and behavior, affect–cognition interactions, " +
        "neural representation of affect, and fMRI methods and statistical modeling",
-  caption: "My research interest road map — still taking shape as I am exploring ;)"
+  caption: "My research interest road map — still taking shape as I am exploring ;)",
+  // 图注后面的说明段落，字体与图注一致。可以写链接；多段就写成数组。
+  note:
+    "One idea I like, the difference between research interests and research identity, comes from Richard Hamming’s <a href=\"https://gwern.net/doc/science/1986-hamming\" target=\"_blank\" rel=\"noopener\"><em>You and Your Research</em></a>. Topics change over a career, but what stays stable is the kind of question I am drawn to. For me, that is mechanism, and I enjoy using neuroimaging to get at it. Affect is where I look because it links cognition to decision-making, acts both as a state and as a modifier of other systems, and sits where subjective experience meets observable mechanism."
 };
 
 const RESEARCH_GROUPS = [
@@ -39,7 +42,7 @@ const RESEARCH_GROUPS = [
         title: "Neural responses and aggregate demand",
         status: "Manuscript submitted",
         question:
-          "Can neural responses predict what individuals choose — and reveal information about future behavior and aggregate demand that behavioral measures alone do not capture?",
+          "Can neural responses predict what individuals choose—and reveal information about future behavior and aggregate demand that behavioral measures alone do not capture?",
         body: [
           "This line of work examines how neural responses during decision-making relate to behavior across multiple scales. I explore these questions through studies of vehicle purchases, movie demand, and fund investment decisions. At the individual level, I test whether neural responses to vehicles predict participants’ choices, including purchases measured longitudinally two years later, and when neural measures provide predictive information beyond participants’ stated preferences and other behavioral measures. At the aggregate level, I ask whether brain responses from a relatively small group can forecast broader market demand for vehicles and movies beyond behavioral measures and time-series benchmarks (ARIMA/SARIMA). The work is supported by the <a href=\"https://www.tri.global\" target=\"_blank\" rel=\"noopener\">Toyota Research Institute</a>."
         ],
@@ -53,7 +56,7 @@ const RESEARCH_GROUPS = [
   {
     heading: "Affect–cognition interactions",
     blurb:
-      "How cognitive processes shape affective responses — and how these interactions are " +
+      "How cognitive processes shape affective responses—and how these interactions are " +
       "represented in the brain across contexts.",
     projects: [
       {

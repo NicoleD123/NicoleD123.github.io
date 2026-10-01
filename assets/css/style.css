@@ -328,6 +328,9 @@ p:last-child { margin-bottom: 0; }
   color: var(--faint);
   margin-top: 8px;
 }
+/* 图注 + 后面的说明段落：同一字号、同一颜色；82ch ≈ 正文栏宽 */
+.framework figcaption p { margin: 0 0 .75em; max-width: 82ch; }
+.framework figcaption p:last-child { margin-bottom: 0; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .framework img { filter: brightness(.9); }
 }

@@ -165,8 +165,15 @@
         alt: RESEARCH_FIGURE.alt || "",
         loading: "eager"
       }));
-      if (RESEARCH_FIGURE.caption) {
-        fig.append(el("figcaption", { textContent: RESEARCH_FIGURE.caption }));
+      const figNotes = [].concat(RESEARCH_FIGURE.note || []);
+      if (RESEARCH_FIGURE.caption || figNotes.length) {
+        const cap = el("figcaption");
+        if (RESEARCH_FIGURE.caption) {
+          cap.append(el("p", { className: "framework-caption", textContent: RESEARCH_FIGURE.caption }));
+        }
+        // 图注后面的说明段落（可含链接），字体与图注一致
+        figNotes.forEach((n) => cap.append(el("p", { className: "framework-note", innerHTML: n })));
+        fig.append(cap);
       }
       figHost.append(fig);
     }

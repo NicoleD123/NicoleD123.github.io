@@ -1,8 +1,8 @@
 /* =============================================================================
    research.js — 研究页内容。
 
-   结构跟着 Nicole 自己的研究框架图走：中心是 neural mechanisms of affective
-   experience，四个外圈是四条进路。RESEARCH_GROUPS 的顺序 = 页面顺序（I–IV 自动编号），
+   结构跟着 Nicole 自己的研究框架图走：中心是 neural mechanisms of affect，
+   四个外圈是四条进路。RESEARCH_GROUPS 的顺序 = 页面顺序（I–IV 自动编号），
    按框架图从正上方顺时针排（Decisions → Affect–cognition → Representation → Methods）。
 
    内容以 Notion 页「个人网站content」第 4 节为准，2026-09-30 同步。
@@ -10,9 +10,9 @@
 
 const RESEARCH_FIGURE = {
   src: "assets/img/research/research.png",
-  alt: "Research framework: neural mechanisms of affective experience at the centre, " +
+  alt: "Research framework: neural mechanisms of affect at the centre, " +
        "surrounded by decisions and behavior, affect–cognition interactions, " +
-       "neural representation of affect, and fMRI methods and statistical modeling",
+       "neural representation of affective experience, and fMRI methods and statistical modeling",
   caption: "My research interest road map — still taking shape as I am exploring ;)",
   // 图注后面的说明段落，字体与图注一致。可以写链接；多段就写成数组。
   note:
@@ -86,7 +86,7 @@ const RESEARCH_GROUPS = [
   },
 
   {
-    heading: "Neural representation of affect",
+    heading: "Neural representation of affective experience",
     blurb:
       "How affective information is represented within and across brain regions, and which " +
       "aspects of these representations are shared across people and contexts.",

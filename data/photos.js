@@ -18,13 +18,6 @@ const T = "assets/img/photos/thumbs/";
 
 const PHOTOS = [
   {
-    src: P + "hydrangea-bench-summer-2026.jpg", thumb: T + "hydrangea-bench-summer-2026.jpg",
-    ratio: 0.833,
-    title: "Hydrangea Bench", place: "Filoli Garden, Bay Area, Summer 2026",
-    alt: "A weathered wooden bench half-swallowed by a hydrangea bush in full bloom",
-    tags: ["Flora"]
-  },
-  {
     src: P + "mt-hood-portland-spring-2026.jpg", thumb: T + "mt-hood-portland-spring-2026.jpg",
     ratio: 0.75,
     title: "Mt Hood", place: "Portland, Spring 2026",

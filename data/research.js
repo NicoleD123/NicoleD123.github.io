@@ -9,7 +9,7 @@
    ========================================================================== */
 
 const RESEARCH_FIGURE = {
-  src: "assets/img/research/framework.png",
+  src: "assets/img/research/research.png",
   alt: "Research framework: neural mechanisms of affective experience at the centre, " +
        "surrounded by decisions and behavior, affect–cognition interactions, " +
        "neural representation of affect, and fMRI methods and statistical modeling",

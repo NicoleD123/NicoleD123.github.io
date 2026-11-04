@@ -18,6 +18,13 @@ const T = "assets/img/photos/thumbs/";
 
 const PHOTOS = [
   {
+    src: P + "carousel-pier-39-fall-2026.jpg", thumb: T + "carousel-pier-39-fall-2026.jpg",
+    ratio: 0.666,
+    title: "Carousel", place: "Pier 39, San Francisco, Fall 2026",
+    alt: "A blue-and-gold double-decker carousel glowing under an overcast sky, visitors strolling past",
+    tags: ["City"]
+  },
+  {
     src: P + "mt-hood-portland-spring-2026.jpg", thumb: T + "mt-hood-portland-spring-2026.jpg",
     ratio: 0.75,
     title: "Mt Hood", place: "Portland, Spring 2026",
@@ -71,20 +78,6 @@ const PHOTOS = [
     ratio: 1.5,
     title: "Banded Earth", place: "Petrified Forest, Winter 2025",
     alt: "Bare eroded badlands in grey and rust, ridge after ridge to the horizon",
-    tags: ["Desert"]
-  },
-  {
-    src: P + "banded-earth-winter-2025.jpg", thumb: T + "banded-earth-winter-2025.jpg",
-    ratio: 1.5,
-    title: "Banded Earth 2", place: "Petrified Forest, Winter 2025",
-    alt: "Striped blue and red clay mounds under a clear sky, a lone hiker for scale",
-    tags: ["Desert"]
-  },
-  {
-    src: P + "cliff-dwelling-winter-2025.jpg", thumb: T + "cliff-dwelling-winter-2025.jpg",
-    ratio: 0.666,
-    title: "Cliff Dwelling", place: "Mesa Verde, Winter 2025",
-    alt: "Ancestral Puebloan stone dwellings tucked beneath a sandstone overhang",
     tags: ["Desert"]
   },
   {
@@ -268,13 +261,6 @@ const PHOTOS = [
     title: "One Sail", place: "Costa Rica, Spring 2022",
     alt: "A single sailboat on a wide calm sea seen from a hillside, an island low on the horizon",
     tags: ["Coast"]
-  },
-  {
-    src: P + "scuffle-sichuan-spring-2021.jpg", thumb: T + "scuffle-sichuan-spring-2021.jpg",
-    ratio: 0.969,
-    title: "Scuffle", place: "Garzê & Ngawa, Sichuan, Spring 2021",
-    alt: "Two dogs tussling on a monastery courtyard, white stupas and painted temple eaves behind them",
-    tags: ["City"]
   },
   {
     src: P + "frost-saratoga-springs-2019.jpg", thumb: T + "frost-saratoga-springs-2019.jpg",

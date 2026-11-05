@@ -5,7 +5,7 @@
    四个外圈是四条进路。RESEARCH_GROUPS 的顺序 = 页面顺序（I–IV 自动编号），
    按框架图从正上方顺时针排（Decisions → Affect–cognition → Representation → Methods）。
 
-   内容以 Notion 页「个人网站content」第 4 节为准，2026-09-30 同步。
+   内容以 Notion 页「个人网站content」第 4 节为准，2026-11-04 同步。
    ========================================================================== */
 
 const RESEARCH_FIGURE = {
@@ -56,9 +56,21 @@ const RESEARCH_GROUPS = [
   {
     heading: "Affect–cognition interactions",
     blurb:
-      "How cognitive processes shape affective responses—and how these interactions are " +
-      "represented in the brain across contexts.",
+      "How cognitive processes shape affective responses—and, conversely, how affective and " +
+      "arousal states shape cognition, for instance, how memory is organized across event boundaries.",
     projects: [
+      {
+        title: "Arousal and the organization of memory across event boundaries",
+        status: "Completed",
+        question:
+          "Does a neural marker of phasic arousal at event boundaries track how memory is segmented—what stays in order and what is set apart?",
+        body: [
+          "Building on <a href=\"https://doi.org/10.1038/s41467-020-17851-9\" target=\"_blank\" rel=\"noopener\">Clewett, Gasser, and Davachi (2020)</a>, I used EEG to test whether the boundary-evoked P3—a putative correlate of phasic locus coeruleus–norepinephrine (LC–NE) arousal—indexes event segmentation in memory. Boundaries impaired temporal order memory and enhanced source memory, replicating the original behavioral pattern. Boundaries also evoked a centroparietal P3 that was reliable at the individual level, and in single-trial regressions, larger P3 responses predicted worse order memory across the boundary and better source memory for the boundary item.",
+          "The boundaries in this study were neutral shifts in context. Related work shows that arousal at such boundaries is consistently linked to separating adjacent memories, whereas the effects of valence are asymmetric: negative shifts tend to separate events, while positive shifts can bind them together. Reappraisal can also create boundaries of its own. I hope to explore these topics further."
+        ],
+        tags: ["EEG", "ERP (P3)", "Single-trial regression"],
+        links: []
+      },
       {
         title: "A neural signature of emotion regulation, and what it represents",
         status: "In progress",
